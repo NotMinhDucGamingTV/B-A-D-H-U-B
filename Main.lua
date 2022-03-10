@@ -23,7 +23,7 @@ Main.Parent = ScreenGui
 Main.AnchorPoint = Vector2.new(0.5, 0.5)
 Main.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 Main.BorderSizePixel = 0
-Main.Position = UDim2.new(0.5, 0, 0.5, 0)
+Main.Position = UDim2.new(0.5, 0, -1, 0)
 Main.Size = UDim2.new(0, 400, 0, 210)
 
 Frame.Parent = Main
@@ -112,6 +112,8 @@ TextBox.TextWrapped = true
 
 UICorner_3.Parent = TextBox
 --Script:
+local twwen2 = game:GetService("TweenService"):Create(Main,TweenInfo.new(3),{Position = UDim2.new(.5,0,.5,0)})
+	twwen2:Play()
 coroutine.wrap(function()
 	local tween = game:GetService("TweenService"):Create(Frame_2,TweenInfo.new(3),{Position = UDim2.new(1,0,0,0)})
 	tween:Play()
