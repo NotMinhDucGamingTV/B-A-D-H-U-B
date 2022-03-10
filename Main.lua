@@ -138,14 +138,23 @@ TextBox.FocusLost:Connect(function(entered)
 				TextLabel.Text = "Finding Script for: "..game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name
 				wait(3)
 				if game.PlaceId == 5303541547 then
-					ScreenGui:Destroy()
+					local Twwen = game:GetService("TweenService"):Create(Main,TweenInfo.new(2),{Position = UDim2.new(.5,0,-1,0)})
+					Twwen:Play()
+					Twwen.Completed:Connect(function()
 					loadstring(game:HttpGet(('https://raw.githubusercontent.com/1stminhcar/Game-Script/main/two%20piece.Lua'),true))()
+					end
 				elseif game.PlaceId == 7542225721 then
-					ScreenGui:Destroy()
+					local Twwen = game:GetService("TweenService"):Create(Main,TweenInfo.new(2),{Position = UDim2.new(.5,0,-1,0)})
+					Twwen:Play()
+					Twwen.Completed:Connect(function()
 					loadstring(game:HttpGet(('https://raw.githubusercontent.com/1stminhcar/Game-Script/main/Sea%20Judgement.Lua'),true))()
+					end
 				elseif game.PlaceId == 8645723106 then
-					ScreenGui:Destroy()
+					local Twwen = game:GetService("TweenService"):Create(Main,TweenInfo.new(2),{Position = UDim2.new(.5,0,-1,0)})
+					Twwen:Play()
+					Twwen.Completed:Connect(function()
 					loadstring(game:HttpGet(('https://raw.githubusercontent.com/1stminhcar/Game-Script/main/Sea%20Hunter%3ARE.Lua'),true))()
+					end
 				else
 					game.Players.LocalPlayer:Kick("Can't Find The Required Script")
 				end
