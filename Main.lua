@@ -1,8 +1,4 @@
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
-
+--Instances:
 local ScreenGui = Instance.new("ScreenGui")
 local Main = Instance.new("Frame")
 local Frame = Instance.new("Frame")
@@ -12,12 +8,9 @@ local UICorner_2 = Instance.new("UICorner")
 local UIGradient = Instance.new("UIGradient")
 local TextLabel = Instance.new("TextLabel")
 local ImageLabel = Instance.new("ImageLabel")
-
 --Properties:
-
 ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-
 Main.Name = "Main"
 Main.Parent = ScreenGui
 Main.AnchorPoint = Vector2.new(0.5, 0.5)
@@ -25,7 +18,6 @@ Main.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 Main.BorderSizePixel = 0
 Main.Position = UDim2.new(0.5, 0, 0.466887444, 0)
 Main.Size = UDim2.new(0, 400, 0, 210)
-
 Frame.Parent = Main
 Frame.AnchorPoint = Vector2.new(0.5, 0.5)
 Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -33,21 +25,16 @@ Frame.BorderSizePixel = 0
 Frame.ClipsDescendants = true
 Frame.Position = UDim2.new(0.5, 0, 0.850000024, 0)
 Frame.Size = UDim2.new(0, 354, 0, 14)
-
 UICorner.Parent = Frame
-
 Frame_2.Parent = Frame
 Frame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Frame_2.BorderSizePixel = 0
 Frame_2.Position = UDim2.new(-1, 0, 0, 0)
 Frame_2.Size = UDim2.new(0, 59, 0, 14)
-
 UICorner_2.Parent = Frame_2
-
 UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(85, 255, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 255, 0))}
 UIGradient.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 1.00), NumberSequenceKeypoint.new(0.50, 0.00), NumberSequenceKeypoint.new(1.00, 0.51)}
 UIGradient.Parent = Frame_2
-
 TextLabel.Parent = Main
 TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.BackgroundTransparency = 1.000
@@ -59,7 +46,6 @@ TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.TextScaled = true
 TextLabel.TextSize = 14.000
 TextLabel.TextWrapped = true
-
 ImageLabel.Parent = Main
 ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ImageLabel.BackgroundTransparency = 1.000
@@ -68,7 +54,7 @@ ImageLabel.Position = UDim2.new(0.375, 0, 0.123739235, 0)
 ImageLabel.Size = UDim2.new(0, 100, 0, 100)
 ImageLabel.Image = "rbxassetid://9058025738"
 ImageLabel.ScaleType = Enum.ScaleType.Stretch
-
+--Scripts:
 coroutine.wrap(function()
 	local tween = game:GetService("TweenService"):Create(Frame_2,TweenInfo.new(3),{Position = UDim2.new(1,0,0,0)})
 	tween:Play()
