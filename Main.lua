@@ -127,7 +127,9 @@ TextLabel.Text = "Player Name: "..game:GetService("Players").LocalPlayer.Name.."
 wait(1)
 local Tween = game:GetService("TweenService"):Create(Confirm,TweenInfo.new(2),{Position = UDim2.new(.5,0,.5,0)})
 Tween:Play()
-Main.Visible = false
+Tween.Completed:Connect(function()
+	Main.Visible = false	
+end)
 TextBox.FocusLost:Connect(function(entered)
 	if entered == true then
 		if TextBox.Text == game.Players.LocalPlayer.Name then
