@@ -142,19 +142,19 @@ TextBox.FocusLost:Connect(function(entered)
 					Twwen:Play()
 					Twwen.Completed:Connect(function()
 					loadstring(game:HttpGet(('https://raw.githubusercontent.com/1stminhcar/Game-Script/main/two%20piece.Lua'),true))()
-					end
+					end)
 				elseif game.PlaceId == 7542225721 then
 					local Twwen = game:GetService("TweenService"):Create(Main,TweenInfo.new(2),{Position = UDim2.new(.5,0,-1,0)})
 					Twwen:Play()
 					Twwen.Completed:Connect(function()
 					loadstring(game:HttpGet(('https://raw.githubusercontent.com/1stminhcar/Game-Script/main/Sea%20Judgement.Lua'),true))()
-					end
+					end)
 				elseif game.PlaceId == 8645723106 then
 					local Twwen = game:GetService("TweenService"):Create(Main,TweenInfo.new(2),{Position = UDim2.new(.5,0,-1,0)})
 					Twwen:Play()
 					Twwen.Completed:Connect(function()
 					loadstring(game:HttpGet(('https://raw.githubusercontent.com/1stminhcar/Game-Script/main/Sea%20Hunter%3ARE.Lua'),true))()
-					end
+					end)
 				else
 					game.Players.LocalPlayer:Kick("Can't Find The Required Script")
 				end
